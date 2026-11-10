@@ -1,8 +1,11 @@
 # Oxly NIS2 & AI Act Readiness Kit — Landing
 
-Public preview of the Oxly landing page.
+Live preview: **https://makashovdenis.github.io/**
 
-- GitHub Pages: https://makashovdenis.github.io/
-- Custom domain (pending DNS): https://oxly-compliance.de/
+The custom domain `oxly-compliance.de` is registered at Namecheap but DNS is not pointed yet. A `CNAME` file is not in this repo on purpose: if it were present, GitHub Pages would redirect the github.io URL to `oxly-compliance.de` before DNS works. After the Namecheap records are in place, add a root file named `CNAME` with the single line:
 
-Impressum and Datenschutz still contain placeholders (`[bitte ergänzen]`) and will be filled in later.
+```
+oxly-compliance.de
+```
+
+Impressum and Datenschutz still contain placeholders (`[bitte ergänzen]`).
