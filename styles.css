@@ -866,7 +866,7 @@ details p {
   max-width: 52em;
 }
 
-#inhalt, #fuer-wen, #ablauf, #preis, #faq, #impressum, #datenschutz, #top, #check-teaser, #demnächst, #nis2-result {
+#inhalt, #fuer-wen, #ablauf, #preis, #faq, #impressum, #datenschutz, #top, #check-teaser, #demnächst, #nis2-result, #abdeckung, #vergleich, #blick-ins-kit, #schnellcheck-pdf, #ratgeber {
   scroll-margin-top: 96px;
 }
 .privacy-box {
@@ -1792,4 +1792,237 @@ button {
     gap: 4px;
     padding: 12px 16px;
   }
+}
+
+/* Draft additions: coverage table, comparison, kit preview, PDF teaser */
+#abdeckung, #vergleich, #blick-ins-kit, #schnellcheck-pdf, #ratgeber {
+  scroll-margin-top: 96px;
+}
+
+.cover {
+  background: var(--ivory);
+  padding-top: 8px;
+}
+.cover .section-head {
+  max-width: var(--measure);
+}
+.cover-wrap {
+  overflow-x: auto;
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+.cover-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+.cover-table th,
+.cover-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 12px 16px;
+  border-top: 1px solid var(--line);
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+.cover-table thead th {
+  border-top: 0;
+  background: var(--ivory-2);
+  font-size: 12.5px;
+  font-weight: 650;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.cover-table tbody th {
+  font-weight: 650;
+  color: var(--navy);
+  width: 28%;
+}
+.cover-table tbody td {
+  color: var(--text-2);
+}
+.cover-table .cover-status {
+  width: 9.5em;
+  white-space: nowrap;
+}
+.cover-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+.cover-badge--in {
+  background: #E3EDE4;
+  color: #1A4A2A;
+}
+.cover-badge--part {
+  background: var(--brass-soft);
+  color: #5A430E;
+}
+.cover-badge--out {
+  background: #ECE7E2;
+  color: #5A4036;
+}
+.cover-note {
+  margin: 16px 0 0;
+  max-width: var(--measure);
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--text-2);
+}
+.cover-gaps {
+  margin: 10px 0 0;
+  max-width: var(--measure);
+  padding-left: 1.2em;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+.cover-gaps li { margin: 0 0 4px; }
+
+.compare {
+  background: var(--ivory-2);
+  padding: 56px 0;
+}
+.compare .section-head {
+  max-width: var(--measure);
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+.compare-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 24px 20px;
+  box-shadow: var(--shadow);
+}
+.compare-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+.compare-card p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+.compare-card a { color: var(--navy); font-weight: 600; }
+
+.pdf-teaser {
+  padding: 28px 0 8px;
+}
+.pdf-teaser-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px 32px;
+  align-items: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px 28px;
+}
+.pdf-teaser h2 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+.pdf-teaser p {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 15.5px;
+  line-height: 1.5;
+  max-width: 46em;
+}
+.pdf-teaser .section-kicker { margin-bottom: 8px; }
+.pdf-teaser-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.kit-look-intro { max-width: var(--measure); }
+.guide-toc {
+  margin: 16px 0 28px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  max-width: 760px;
+}
+.guide-toc-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px 12px;
+  background: var(--ivory-2);
+  border-bottom: 1px solid var(--line);
+}
+.guide-toc-head h3 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--navy);
+}
+.guide-toc-head p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-3);
+}
+.guide-toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px 16px;
+}
+.guide-toc li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 5px 0;
+  font-size: 14.5px;
+  line-height: 1.4;
+  color: var(--navy);
+}
+.guide-toc .toc-sub {
+  padding-left: 1.15em;
+  font-size: 13.5px;
+  color: var(--text-2);
+}
+.guide-toc .toc-page {
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+}
+.kit-previews {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  max-width: 760px;
+}
+
+@media (max-width: 800px) {
+  .compare-grid { grid-template-columns: 1fr; }
+  .pdf-teaser-inner {
+    grid-template-columns: 1fr;
+    padding: 20px 18px;
+  }
+  .pdf-teaser-actions { justify-content: flex-start; }
+  .cover-table { min-width: 540px; }
 }
