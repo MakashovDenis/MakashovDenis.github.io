@@ -85,4 +85,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://oxly-compliance.de/en/license.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://oxly-compliance.de/lizenz.html"/>
   </url>
+  <url>
+    <loc>https://oxly-compliance.de/ratgeber.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://oxly-compliance.de/nis2-betroffenheit-pruefen.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://oxly-compliance.de/ai-act-pflichten-kmu.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
 </urlset>
